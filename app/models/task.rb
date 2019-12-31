@@ -1,4 +1,5 @@
 class Task < ApplicationRecord
+    paginates_per 30
     validates :name, presence: true, length: {maximum: 30}
     # validates :validate_name_not_including_comma
     belongs_to :user
