@@ -1,4 +1,4 @@
-document.addEventListener('turbolinks:load', function(){
+document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('td').forEach(function(td){
         td.addEventListener('mousemove', function(e){
             e.currentTarget.style.backgroundColor = "#eff";
